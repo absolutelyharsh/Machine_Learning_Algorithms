@@ -8,7 +8,7 @@ Simplest Example is finding the price of your house. No. of bedrooms 2 (this is 
 Linear regression is a supervised machine learning model which is the most simple and popular technique for predicting a continous variables.
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/1.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/1.png"> 
 </p>
 
 Let's consider X is the values corresponding to the living are of houses (input) amd y is the price of these houses respectively (output). The y values are predicted by h. h can be thought of as a function that maps X values to y.
