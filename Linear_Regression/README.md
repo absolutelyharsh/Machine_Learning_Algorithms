@@ -26,13 +26,13 @@ Linear regression was developed in the field of statistics and is studied as a m
 Based on the number of independent variables (i.e X) there are two types of regression
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/2.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/2.png"> 
 </p>
 
 1. Simple Linear Regression : A simple linear regression has a single independent variable and the form is : 
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/8.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/8.png"> 
 </p>
 
 Here,
@@ -46,7 +46,7 @@ Here,
 2. Multiple Linear Regression : A multiple linear regression has multiple independent variables and the form is : 
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/9.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/9.png"> 
 </p>
 
 - Y is a dependent variable.
@@ -58,25 +58,25 @@ Here,
 Consider dummy house dataset with 2 independent variables (Living area and number of bedrooms) and one dependent variable (price)
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/3.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/3.png"> 
 </p>
 
 To perform regression we need a way to represent h. Considering the initial choice to be such that we approximate y as a linear function of x:
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/4.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/4.png"> 
 </p>
 
 The θi’s are parameters used to map X to y accurately. To make things simpler for understanding lets drop the θ from the hθ(x) and letting X0 = 1 (intercept) such that 
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/5.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/5.png"> 
 </p>
 
 The θi’s are parameters used to map X to y accurately. To make things simpler for understanding lets drop the θ from the hθ(x) and letting X0 = 1 (intercept) such that 
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/6.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/6.png"> 
 </p>
 
 Reason behind square value instead of absolute value can be found [here](https://www.quora.com/Why-do-we-use-square-error-instead-of-absolute-value-when-we-calculate-R-2-in-regression-analysis). 
@@ -94,19 +94,19 @@ Our aim is to select θ so as to minimize J(θ).  We could possibly use a search
 This optimization can be done by an algorithm called gradient descent.
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/7.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/7.png"> 
 </p>
 
 Here, α is called the learning rate. This is a very natural algorithm that repeatedly takes a step in the direction of steepest decrease of J. This term α effectively controls how steep your algorithm would move to the decrease of J. It can be pictorially expressed as the following:
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/gradient_Descent.jpg"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/gradient_Descent.jpg"> 
 </p>
 
 Following would be the results for different learning rates:
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Linear_Regression/blob/main/Images/gradient_descent_2.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Linear_Regression/Images/gradient_descent_2.png"> 
 </p>
 
 ## Gradient Descent
