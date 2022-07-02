@@ -14,19 +14,19 @@ Logistic regression is a supervised machine learning classification algorithm.
 Imagine that you’re tasked to predict whether or not a client of your bank will default on their loan repayments. The first thing to do is construct a dataset of historic client defaults. The data would contain client demographic information (e.g. age, gender, location, etc.), their financial information (loan size, times that payment was overdue, etc.), and whether they ended up defaulting on a loan or repaying it.
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Logistic_Regression/blob/main/Images/Untitled.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Logistic_Regression/Images/Untitled.png"> 
 </p>
 
 The “Yes” and “No” categories can be recorded into 1 and 0 for the target variable (computers deal better with numbers than words):
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Logistic_Regression/blob/main/Images/2.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Logistic_Regression/Images/2.png"> 
 </p>
 
 After this, we would train a logistic regression model, which would learn a mapping between the input variables (age, gender, loan size) and the expected output (defaulted). We could use the logistic regression model to predict the default probability on three new customers:
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Logistic_Regression/blob/main/Images/3.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Logistic_Regression/Images/3.png"> 
 </p>
 
 So, what does the new column Predicted default tell us? It states the probability of each of the new customers belonging to class 1 (defaulted on loan). We could come up with a threshold value (let’s say 0.5) and anything above that decision threshold would be default behavior (i.e. Customer 5 would be predicted to default on their loan payments, while Customers 4 and 6 would be predicted to repay them).
@@ -46,7 +46,7 @@ So, what does the new column Predicted default tell us? It states the probabilit
 Once trained, the model takes the form of a logistic regression equation:
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Logistic_Regression/blob/main/Images/4.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Logistic_Regression/Images/4.png"> 
 </p>
 
 In the above equation: 
@@ -64,13 +64,13 @@ Why wouldn’t we just use the linear model to make predictions about class memb
 Imagine that we have the following table for the number of late payments made by a customer (x) and whether the customer later defaulted on their loan (y).
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Logistic_Regression/blob/main/Images/5.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Logistic_Regression/Images/5.png"> 
 </p>
 
 We could model the data with a linear regression in the following way:
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Logistic_Regression/blob/main/Images/6.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Logistic_Regression/Images/6.png"> 
 </p>
 
 There are a couple of problems here:
@@ -86,7 +86,7 @@ A better approach would be to model the probability of default using a sigmoid f
 The sigmoid function is a function that produces an s-shaped curve. It takes any real value as an argument and maps it to a range between 0 and 1 (exclusive). For the problem above, the sigmoid curve would look like this:
 
 <p align="center" width="100%">
-    <img src="https://github.com/absolutelyharsh/Logistic_Regression/blob/main/Images/7.png"> 
+    <img src="https://github.com/absolutelyharsh/Machine_Learning_Algorithms/blob/master/Logistic_Regression/Images/7.png"> 
 </p>
 
 In machine learning, it is used to map the linear model in logistic regression to map the linear predictions to outcome probabilities (bounded between 0 and 1), which are easier to interpret for class membership.
